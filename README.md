@@ -21,6 +21,8 @@ TjuES57Map v1.0.0 is released by two kinds of applications: Demo System and ENC 
 
 
 ## 资料 Documentation
+TjuES57Map相关参考资料已放置在各演示示范系统与浏览器目录中，请用户自行查阅。
+
 Documentation of TjuES57Map is accesible in each directories.
 
 
