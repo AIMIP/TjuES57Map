@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A072A0CF-5986-4556-BB39-E3A46E9EBFDF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>7</LangVersion>
+    <AssemblyName>TjuES57Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TjuES57Demo</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>天津大学电子海图控件logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ogr_csharp, Version=1.0.7963.24661, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\ogr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="osr_csharp, Version=1.0.7963.24661, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\osr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="TjuES57Map, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\TjuES57Map.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Forms\frm_Ranging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_Ranging.Designer.cs">
+      <DependentUpon>frm_Ranging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawPolygonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawPolygonInfo.Designer.cs">
+      <DependentUpon>frm_DrawPolygonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawPointInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawPointInfo.Designer.cs">
+      <DependentUpon>frm_DrawPointInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawLineInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawLineInfo.Designer.cs">
+      <DependentUpon>frm_DrawLineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawImageInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_DrawImageInfo.Designer.cs">
+      <DependentUpon>frm_DrawImageInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_Area.Designer.cs">
+      <DependentUpon>frm_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_Text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\frm_Text.designer.cs">
+      <DependentUpon>frm_Text.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_chaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_chaxun.designer.cs">
+      <DependentUpon>frm_chaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_MainForm.Designer.cs">
+      <DependentUpon>frm_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_MapAlpha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_MapAlpha.designer.cs">
+      <DependentUpon>frm_MapAlpha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TuCengManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TuCengManager.Designer.cs">
+      <DependentUpon>frm_TuCengManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Help.Designer.cs">
+      <DependentUpon>frm_Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Forms\frm_Ranging.resx">
+      <DependentUpon>frm_Ranging.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\frm_DrawPolygonInfo.resx">
+      <DependentUpon>frm_DrawPolygonInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\frm_DrawPointInfo.resx">
+      <DependentUpon>frm_DrawPointInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\frm_DrawLineInfo.resx">
+      <DependentUpon>frm_DrawLineInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\frm_DrawImageInfo.resx">
+      <DependentUpon>frm_DrawImageInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\frm_Area.resx">
+      <DependentUpon>frm_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\frm_Text.resx">
+      <DependentUpon>frm_Text.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_chaxun.resx">
+      <DependentUpon>frm_chaxun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_MainForm.resx">
+      <DependentUpon>frm_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_MapAlpha.resx">
+      <DependentUpon>frm_MapAlpha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TuCengManager.resx">
+      <DependentUpon>frm_TuCengManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Help.resx">
+      <DependentUpon>frm_Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\未选择1.png" />
+    <None Include="Resources\选择1.png" />
+    <None Include="Resources\5米等深线.png" />
+    <None Include="Resources\10米等深线.png" />
+    <None Include="Resources\20米等深线.png" />
+    <None Include="Resources\30米等深线.png" />
+    <None Include="Resources\Color_白天.png" />
+    <None Include="Resources\Color_黑夜.png" />
+    <None Include="Resources\Color_黄昏.png" />
+    <None Include="Resources\Color_晴朗白天.png" />
+    <None Include="Resources\Color_阴天.png" />
+    <None Include="Resources\标准显示.png" />
+    <None Include="Resources\参数设置.png" />
+    <None Include="Resources\测距.png" />
+    <None Include="Resources\测面积.png" />
+    <None Include="Resources\传统纸质符号.png" />
+    <None Include="Resources\等深线设置.png" />
+    <None Include="Resources\符号化区域边界.png" />
+    <None Include="Resources\海图标绘.png" />
+    <None Include="Resources\海图出图.png" />
+    <None Include="Resources\海图管理.png" />
+    <None Include="Resources\海图设置.png" />
+    <None Include="Resources\海图图层管理.png" />
+    <None Include="Resources\海图文件.png" />
+    <None Include="Resources\绘制点位.png" />
+    <None Include="Resources\绘制多边形.png" />
+    <None Include="Resources\绘制图片.png" />
+    <None Include="Resources\绘制折线.png" />
+    <None Include="Resources\基本显示.png" />
+    <None Include="Resources\加载海图.png" />
+    <None Include="Resources\简单符号.png" />
+    <None Include="Resources\简单区域边界.png" />
+    <None Include="Resources\清除海图.png" />
+    <None Include="Resources\全部不显示.png" />
+    <None Include="Resources\全部显示.png" />
+    <None Include="Resources\全显示.png" />
+    <None Include="Resources\确定.png" />
+    <None Include="Resources\设置背景色.png" />
+    <None Include="Resources\说明.png" />
+    <None Include="Resources\天津大学电子海图控件logo.png" />
+    <None Include="Resources\天津大学电子海图控件logo1.png" />
+    <None Include="Resources\天津大学电子海图控件logo2.png" />
+    <None Include="Resources\图层管理.png" />
+    <None Include="Resources\图幅复位.png" />
+    <None Include="Resources\未选择.png" />
+    <None Include="Resources\文件管理.png" />
+    <None Include="Resources\系统帮助.png" />
+    <None Include="Resources\系统退出.png" />
+    <None Include="Resources\显示比例尺.png" />
+    <None Include="Resources\显示经纬网.png" />
+    <None Include="Resources\显示水深点.png" />
+    <None Include="Resources\显示文本.png" />
+    <None Include="Resources\显示元物标.png" />
+    <None Include="Resources\显示指北针.png" />
+    <None Include="Resources\选择.png" />
+    <None Include="Resources\颜色方案.png" />
+    <None Include="Resources\英文显示.png" />
+    <None Include="Resources\中文显示.png" />
+    <Content Include="天津大学电子海图控件logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
