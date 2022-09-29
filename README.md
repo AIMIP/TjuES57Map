@@ -9,7 +9,7 @@ S-57 Electronic Chart Control developed by Tianjin University
 TjuES57Map is an Electronic Chart Control written for .NET Framework. It is independently developed by AIMIP Lab, Tianjin University with independent intellectual property rights. TjuES57Map displays IHO S-57 standard Electronic Navigational Chart (ENC), and allows developers to incorporate various functionality into their Electronic Chart Display and Information System (ECDIS) and other applications.
 
 ### 主要功能接口 Functionality
-- 海图的动态、快速加载与释放 Fast & Dynamic ENC Loading/Disposing
+- 海图的动态、快速加载与释放(非体验版) Fast & Dynamic ENC Loading/Disposing
 - 空间查询 Spatial Idendification
 - 图层管理 Layer Management
 - 用户标注与量算 User Plotting & Measurements
@@ -28,6 +28,6 @@ Documentation of TjuES57Map is accesible in each directories.
 
 
 ## 控件激活 Register
-用户可选择激活TjuES57Map来享受去水印与海图的动态、快速加载与释放功能，请将演示示范系统提示的机器码发送至aimip@tju.ede.cn以激活本控件。
+用户可选择付费激活TjuES57Map来享受去水印与海图的动态、快速加载与释放功能，请将演示示范系统提示的机器码发送至aimip@tju.ede.cn以激活本控件。
 
 Register TjuES57Map to unlock Fast & Dynamic ENC Loading/Disposing and watermark removal. Please send the machine code prompted by the demo System to aimip@tju.ede.cn 
