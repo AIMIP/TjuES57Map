@@ -28,6 +28,6 @@ Documentation of TjuES57Map is accesible in each directories.
 
 
 ## 控件激活 Register
-用户可选择付费激活TjuES57Map来享受去水印与海图的动态、快速加载与释放功能，请将演示示范系统提示的机器码发送至aimip@tju.ede.cn以激活本控件。
+用户可选择付费激活TjuES57Map来享受去水印与海图的动态、快速加载与释放功能，请将演示示范系统提示的机器码发送至aimip@tju.edu.cn以激活本控件。
 
-Register TjuES57Map to unlock Fast & Dynamic ENC Loading/Disposing and watermark removal. Please send the machine code prompted by the demo System to aimip@tju.ede.cn 
+Register TjuES57Map to unlock Fast & Dynamic ENC Loading/Disposing and watermark removal. Please send the machine code prompted by the demo System to aimip@tju.edu.cn 
