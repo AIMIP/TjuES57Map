@@ -4,9 +4,9 @@
 S-57 Electronic Chart Control developed by Tianjin University
 
 ## 简介 What is TjuES57Map?
-天津大学电子海图控件由天津大学AIMIP实验室独立自主开发，具有独立知识产权，支持绘制IHO S-57标准海图，使用.Net开发，兼容Windows平台。其具有强大的海图绘制能力，兼具多种海图交互方式，能够帮助用户在应用中构建功能丰富、交互性强的海图显示与信息系统 (ECDIS)。
+天津大学电子海图控件是一种用于解析和显示S-57电子海图的sdk，由天津大学AIMIP实验室独立自主开发，具有独立知识产权，支持绘制IHO S-57标准海图，使用.Net开发，兼容Windows平台。其具有强大的海图绘制能力，兼具多种海图交互方式，能够帮助用户在应用中构建功能丰富、交互性强的海图显示与信息系统 (ECDIS)。
 
-TjuES57Map is an Electronic Chart Control written for .NET Framework. It is independently developed by AIMIP Lab, Tianjin University with independent intellectual property rights. TjuES57Map displays IHO S-57 standard Electronic Navigational Chart (ENC), and allows developers to incorporate various functionality into their Electronic Chart Display and Information System (ECDIS) and other applications.
+TjuES57Map, an Electronic Chart Control written for .NET Framework, is an sdk used to analyze and display S-57 charts. It is independently developed by AIMIP Lab, Tianjin University with independent intellectual property rights. TjuES57Map displays IHO S-57 standard Electronic Navigational Chart (ENC), and allows developers to incorporate various functionality into their Electronic Chart Display and Information System (ECDIS) and other applications.
 
 ### 主要功能接口 Functionality
 - 海图的动态、快速加载与释放(非体验版) Fast & Dynamic ENC Loading/Disposing
@@ -31,3 +31,8 @@ Documentation of TjuES57Map is accesible in each directories.
 用户可选择付费激活TjuES57Map来享受去水印与海图的动态、快速加载与释放功能，请将演示示范系统提示的机器码发送至aimip@tju.edu.cn以激活本控件。
 
 Register TjuES57Map to unlock Fast & Dynamic ENC Loading/Disposing and watermark removal. Please send the machine code prompted by the demo System to aimip@tju.edu.cn 
+
+## 定制开发 Customization
+用户可定制ECDIS和其他航海应用，定制的产品将基于TjuES57Map开发，咨询请联系aimip@tju.edu.cn
+
+Customization is also supported, please contact aimip@tju.edu.cn to order customized ECDIS and other nautical applications.
